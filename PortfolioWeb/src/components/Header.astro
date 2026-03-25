@@ -1,69 +1,109 @@
 ---
-import LinkedInIcon from './icons/LinkedInIcon.astro';
-import MailIcon from './icons/MailIcon.astro';
+import LinkedInIcon from "./icons/LinkedInIcon.astro";
+import MailIcon from "./icons/MailIcon.astro";
 ---
 
-<header class="flex items-center justify-between px-6 py-6 md:px-12 border-b border-slate-800/50">
-    <a href="/" class="text-xl font-bold text-white tracking-tight hover:text-blue-400 transition-colors">
-        Ariel <span class="text-blue-500">.dev</span>
-    </a>
-    
-    <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
-        <a href="#inicio" class="hover:text-white transition-colors">Inicio</a>
-        <a href="#proyectos" class="hover:text-white transition-colors">Proyectos</a>
-        <a href="#sobre-mi" class="hover:text-white transition-colors">Sobre Mí</a>
-    </nav>
+<header
+  class="sticky top-0 z-50 flex items-center justify-between px-6 py-6 md:px-12 border-b border-slate-800/50 bg-slate-900 backdrop-blur-md"
+>
+  <a
+    href="/"
+    class="text-xl font-bold text-white tracking-tight hover:text-blue-400 transition-colors"
+  >
+    Ariel <span class="text-blue-500">.dev</span>
+  </a>
 
-    <div class="relative hidden md:inline-block">
-        
-        <button id="contacto-btn" class="inline-flex items-center justify-center gap-2 px-5 py-2 text-sm font-medium text-white bg-slate-800 border border-slate-700 rounded-full transition-all hover:bg-slate-700 hover:border-slate-500 cursor-pointer">
-            Contactame
-            <svg id="contacto-arrow" class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-        </button>
+  <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+    <a href="#" class="hover:text-white transition-colors">Inicio</a>
+    <a href="#proyectos" class="hover:text-white transition-colors">Proyectos</a
+    >
+    <a href="#sobre-mi" class="hover:text-white transition-colors">Sobre Mí</a>
+  </nav>
 
-        <div id="contacto-menu" class="absolute right-0 top-full mt-2 w-max min-w-48 pr-4 bg-slate-800 border border-slate-700 rounded-xl shadow-2xl opacity-0 invisible transition-all duration-300 transform origin-top -translate-y-2 z-50">
-            <div class="p-2 flex flex-col gap-1">
-                <a href="https://www.linkedin.com/in/ariel-valverde-paine" target="_blank" aria-label="LinkedIn" class="flex items-center gap-3 px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700 rounded-lg transition-colors">
-                    <LinkedInIcon class="w-5 h-5 text-blue-500" />
-                    Ariel Valverde
-                </a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arielvalverde.pa@gmail.com" target="_blank" aria-label="Correo Electrónico" class="flex items-center gap-3 px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700 rounded-lg transition-colors">
-                    <MailIcon class="w-5 h-5 text-red-400" />
-                    arielvalverde.pa@gmail.com
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <button class="md:hidden text-slate-300 hover:text-white" aria-label="Abrir menú">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
+  <div class="relative hidden md:inline-block">
+    <button
+      id="contacto-btn"
+      class="inline-flex items-center justify-center gap-2 px-5 py-2 text-sm font-medium text-white bg-slate-800 border border-slate-700 rounded-full transition-all hover:bg-slate-700 hover:border-slate-500 cursor-pointer"
+    >
+      Contactame
+      <svg
+        id="contacto-arrow"
+        class="w-4 h-4 transition-transform duration-300"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M19 9l-7 7-7-7"></path>
+      </svg>
     </button>
+
+    <div
+      id="contacto-menu"
+      class="absolute right-0 top-full mt-2 w-max min-w-48 pr-4 bg-slate-800 border border-slate-700 rounded-xl shadow-2xl opacity-0 invisible transition-all duration-300 transform origin-top -translate-y-2 z-50"
+    >
+      <div class="p-2 flex flex-col gap-1">
+        <a
+          href="https://www.linkedin.com/in/ariel-valverde-paine"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          class="flex items-center gap-3 px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700 rounded-lg transition-colors"
+        >
+          <LinkedInIcon class="w-5 h-5 text-blue-500" />
+          Ariel Valverde
+        </a>
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=arielvalverde.pa@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Correo Electrónico"
+          class="flex items-center gap-3 px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700 rounded-lg transition-colors"
+        >
+          <MailIcon class="w-5 h-5 text-red-400" />
+          arielvalverde.pa@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <button
+    class="md:hidden text-slate-300 hover:text-white"
+    aria-label="Abrir menú"
+  >
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </button>
 </header>
 
 <script>
-    const btn = document.getElementById('contacto-btn');
-    const menu = document.getElementById('contacto-menu');
-    const arrow = document.getElementById('contacto-arrow');
+  const btn = document.getElementById("contacto-btn");
+  const menu = document.getElementById("contacto-menu");
+  const arrow = document.getElementById("contacto-arrow");
 
-    // Escucha los clics en el botón
-    btn?.addEventListener('click', (e) => {
-        e.stopPropagation(); // Evita que se dispare el evento del documento
-        menu?.classList.toggle('opacity-0');
-        menu?.classList.toggle('invisible');
-        menu?.classList.toggle('-translate-y-2');
-        arrow?.classList.toggle('rotate-180');
-    });
+  // Escucha los clics en el botón
+  btn?.addEventListener("click", (e) => {
+    e.stopPropagation(); // Evita que se dispare el evento del documento
+    menu?.classList.toggle("opacity-0");
+    menu?.classList.toggle("invisible");
+    menu?.classList.toggle("-translate-y-2");
+    arrow?.classList.toggle("rotate-180");
+  });
 
-    // Escucha los clics fuera del menú para cerrarlo
-    document.addEventListener('click', (e) => {
-        // Ignorar errores de TypeScript/Astro validando que e.target sea un Node
-        if (menu && !menu.contains(e.target as Node)) {
-            menu.classList.add('opacity-0', 'invisible', '-translate-y-2');
-            arrow?.classList.remove('rotate-180');
-        }
-    });
+  // Escucha los clics fuera del menú para cerrarlo
+  document.addEventListener("click", (e) => {
+    // Ignorar errores de TypeScript/Astro validando que e.target sea un Node
+    if (menu && !menu.contains(e.target as Node)) {
+      menu.classList.add("opacity-0", "invisible", "-translate-y-2");
+      arrow?.classList.remove("rotate-180");
+    }
+  });
 </script>

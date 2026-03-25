@@ -1,42 +1,75 @@
 ---
-// src/components/Hero.astro
+import { Image } from "astro:assets";
+import FotoPortfolio from "../assets/FotoPortfolio.png";
+import TechStack from "./TechStack.astro";
 
-import { Image } from 'astro:assets';
-import FotoPortfolio from '../assets/FotoPortfolio.png';
-
-// Importamos el icono (ahora usamos ./ porque estamos en la misma carpeta base 'components')
-import GitHubIcon from './icons/GitHubIcon.astro';
+import GitHubIcon from "./icons/GitHubIcon.astro";
 ---
 
 <section class="flex flex-col md:flex-row items-center justify-between gap-12">
-    <div class="flex-1 space-y-6 text-left">
-        <div class="flex items-center gap-6 pt-4">
-            <p class="text-3xl font-medium text-slate-300 m-0">
-                Hola, soy Ariel Valverde 👋 
-            </p>
-            <a href="https://github.com/yovngmamba8" target="_blank" aria-label="GitHub">
-                <GitHubIcon class="w-8 h-8 text-slate-300 hover:text-blue-500 transition-colors duration-300" />
-            </a>
-        </div>
-        
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
-            Desarrollador Web <br/>
-            Full Stack <br/>
-            <span class="text-blue-500">y Calidad de Software</span>
-        </h1>
-        
-        <p class="text-xl text-slate-400 max-w-lg">
-            Estudiante de Ingeniería en Informática en <span class="text-blue-500">Duoc</span>
-            <span class="text-yellow-400 font-bold">UC</span>
-            con experiencia en desarrollo web y calidad de software. Apasionado por crear soluciones 
-            innovadoras y eficientes. Siempre buscando aprender nuevas tecnologías y mejorar mis habilidades. 
-            ¡Bienvenido a mi portfolio!
-        </p> 
+  <div class="flex-1 space-y-6 text-left">
+    <div class="flex items-center gap-6 pt-4">
+      <p class="text-3xl font-medium text-slate-300 m-0">
+        Hola, soy Ariel Valverde 👋
+      </p>
+      <a
+        href="https://github.com/yovngmamba8"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+      >
+        <GitHubIcon
+          class="w-8 h-8 text-slate-300 hover:text-blue-500 transition-colors duration-300"
+        />
+      </a>
     </div>
-    
-    <div class="flex-1 flex justify-center md:justify-end">
-        <Image src={FotoPortfolio} 
-         alt="Foto de Ariel Valverde" 
-         class="w-80 h-80 object-cover rounded-full" />
-    </div>
+
+    <h1
+      class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight"
+    >
+      Desarrollador Web <br />
+      Full Stack <br />
+      <span class="text-blue-500">y Calidad de Software</span>
+      <TechStack />
+    </h1>
+
+    <p class="text-xl text-slate-400 max-w-lg pb-2">
+      Estudiante de Ingeniería en Informática en <span class="text-blue-500"
+        >Duoc</span
+      >
+      <span class="text-yellow-400 font-bold">UC</span>
+      con experiencia en desarrollo web y calidad de software. Apasionado por crear
+      soluciones innovadoras y eficientes. Siempre buscando aprender nuevas tecnologías
+      y mejorar mis habilidades. ¡Bienvenido a mi portfolio!
+    </p>
+
+    <a
+      href="/CV_Ariel_Valverde.pdf"
+      download
+      class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-white bg-blue-600 hover:bg-blue-500 rounded-lg transition-colors duration-300"
+    >
+      <svg
+        class="w-4 h-4"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V3"
+        ></path>
+      </svg>
+      Descargar CV
+    </a>
+  </div>
+
+  <div class="flex-1 flex justify-center md:justify-end">
+    <Image
+      src={FotoPortfolio}
+      alt="Foto de Ariel Valverde"
+      class="w-80 h-80 object-cover rounded-full"
+    />
+  </div>
 </section>

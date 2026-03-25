@@ -1,23 +1,30 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import '../global.css';
+import Layout from "../layouts/Layout.astro";
+import "../global.css";
 
-
-import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro';
-import Projects from '../components/Projects.astro';
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Projects from "../components/Projects.astro";
+import AboutMe from "../components/AboutMe.astro";
+import Experience from "../components/Experience.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Ariel Valverde | Ingeniero en Informática">
-    <Header />
-    
-    <main class="px-6 py-10 md:px-12 md:py-12">
-        <Hero />
-        <Projects />
-    </main>
-            
-            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-               </div>
-        </section>
-    </main>
+  <Header />
+
+  <main class="px-6 py-10 md:px-12 md:py-12">
+    <Hero />
+    <Projects />
+
+    <section class="mt-20" id="sobre-mi">
+      <h2 class="text-3xl font-bold text-white mb-6">Sobre Mí & Trayectoria</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <AboutMe />
+        <Experience />
+      </div>
+    </section>
+  </main>
+
+  <Footer />
 </Layout>
