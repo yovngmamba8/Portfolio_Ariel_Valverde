@@ -1,49 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../global.css';
-import {Image} from 'astro:assets';
-import FotoPortfolio from '../assets/FotoPortfolio.png';
+
+
 import Header from '../components/Header.astro';
-//Iconos
-import LinkedIn from '../components/icons/LinkedIn.astro';
-import GitHub from '../components/icons/GitHub.astro';
-import Mail from '../components/icons/Mail.astro';
+import Hero from '../components/Hero.astro';
+import Projects from '../components/Projects.astro';
 ---
 
 <Layout title="Ariel Valverde | Ingeniero en Informática">
     <Header />
+    
     <main class="px-6 py-10 md:px-12 md:py-12">
-        <section class="flex flex-col md:flex-row items-center justify-between gap-12">
-            <div class="flex-1 space-y-6 text-left">
-                <div class="flex items-center gap-6 pt-4">
-                    <p class="text-3xl font-medium text-slate-300 m-0">
-                        Hola, soy Ariel Valverde 👋 
-                    </p>
-                    <a href="https://github.com/yovngmamba8" target="_blank" aria-label="GitHub">
-                        <GitHub class="w-8 h-8 text-slate-300 hover:text-blue-500 transition-colors duration-300" />
-                    </a>
-                </div>
-                
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
-                    Desarrollador Web </br>
-                    Full Stack </br>
-                    <span class="text-blue-500">y Calidad de Software</span>
-                </h1>
-                
-                <p class="text-xl text-slate-400 max-w-lg">
-                    Estudiante de Ingeniería en Informática en <span class="text-blue-500">Duoc</span>
-                    <span class="text-yellow-400 font-bold">UC</span>
-                    con experiencia en desarrollo web y calidad de software. Apasionado por crear soluciones 
-                    innovadoras y eficientes. Siempre buscando aprender nuevas tecnologías y mejorar mis habilidades. 
-                    ¡Bienvenido a mi portfolio!
-                </p> 
-            </div>
+        <Hero />
+        <Projects />
+    </main>
             
-            <div class="flex-1 flex justify-center md:justify-end">
-                <Image src={FotoPortfolio} 
-                 alt="Foto de Ariel Valverde" 
-                 class="w-80 h-80 object-cover rounded-full" />
-            </div>
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+               </div>
         </section>
     </main>
 </Layout>
