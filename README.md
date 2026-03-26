@@ -6,7 +6,7 @@
 
 Bienvenido al repositorio de mi portafolio web personal. Este proyecto fue diseñado y desarrollado desde cero para mostrar mi trayectoria, mis habilidades como desarrollador Full Stack y mi enfoque hacia la Calidad de Software (QA) y la Seguridad de Redes.
 
-Puedes visitar la versión en producción aquí: [portfolio-ariel-valverde.vercel.app) 
+Puedes visitar la versión en producción aquí: [portfolio-ariel-valverde.vercel.app]
 
 ## 🎯 Sobre el Proyecto
 
@@ -27,11 +27,14 @@ Este portafolio no es solo una página estática, sino una aplicación web moder
 
 ## 🚀 Instalación y Uso Local
 
-👨‍💻 Autor
-Ariel Valverde
+## 👨‍💻 Autor
 
-Estudiante de Ingeniería en Informática (Duoc UC)
+**Ariel Valverde**
+- Estudiante de Ingeniería en Informática (Duoc UC)
+- Técnico en Telecomunicaciones
+- [LinkedIn](www.linkedin.com/in/ariel-valverde-paine)
+- [GitHub](https://github.com/yovngmamba8)
+- [Envíame un Gmail](https://mail.google.com/mail/?view=cm&fs=1&to=arielvalverde.pa@gmail.com)
 
-Técnico en Telecomunicaciones
-
-Diseñado y desarrollado con pasión por la calidad y el buen código. ☕
+---
+*Diseñado y desarrollado con pasión por la calidad y el buen código.* ☕
