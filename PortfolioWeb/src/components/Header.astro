@@ -1,87 +1,97 @@
 ---
 import LinkedInIcon from "./icons/LinkedInIcon.astro";
 import MailIcon from "./icons/MailIcon.astro";
+import ThemeToggle from "./ThemeToggle.astro";
+import LanguageToggle from "./LanguageToggle.astro";
 ---
 
 <header
-  class="sticky top-0 z-50 flex items-center justify-between px-6 py-6 md:px-12 border-b border-slate-800/50 bg-slate-900 backdrop-blur-md"
+  class="sticky top-0 z-50 flex items-center justify-between px-6 py-6 md:px-12 border-b border-border bg-bg-header backdrop-blur-md transition-colors duration-300"
 >
   <a
     href="/"
-    class="text-xl font-bold text-white tracking-tight hover:text-blue-400 transition-colors"
+    class="text-xl font-bold text-text-primary tracking-tight hover:text-accent transition-colors"
   >
-    Ariel <span class="text-blue-500">.dev</span>
+    Ariel <span class="text-accent">.dev</span>
   </a>
 
-  <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
-    <a href="#" class="hover:text-white transition-colors">Inicio</a>
-    <a href="#proyectos" class="hover:text-white transition-colors">Proyectos</a
-    >
-    <a href="#sobre-mi" class="hover:text-white transition-colors">Sobre Mí</a>
+  <nav class="hidden md:flex gap-8 text-sm font-medium text-text-secondary">
+    <a href="#" class="hover:text-text-primary transition-colors" data-i18n="nav.home">Inicio</a>
+    <a href="#proyectos" class="hover:text-text-primary transition-colors" data-i18n="nav.projects">Proyectos</a>
+    <a href="#sobre-mi" class="hover:text-text-primary transition-colors" data-i18n="nav.about">Sobre Mí</a>
   </nav>
 
-  <div class="relative hidden md:inline-block">
-    <button
-      id="contacto-btn"
-      class="inline-flex items-center justify-center gap-2 px-5 py-2 text-sm font-medium text-white bg-slate-800 border border-slate-700 rounded-full transition-all hover:bg-slate-700 hover:border-slate-500 cursor-pointer"
-    >
-      Contactame
-      <svg
-        id="contacto-arrow"
-        class="w-4 h-4 transition-transform duration-300"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
+  <div class="hidden md:flex items-center gap-4">
+    <LanguageToggle />
+    <ThemeToggle />
+    
+    <div class="relative">
+      <button
+        id="contacto-btn"
+        class="inline-flex items-center justify-center gap-2 px-5 py-2 text-sm font-medium text-text-primary bg-bg-card border border-border rounded-full transition-all hover:bg-bg-card-hover hover:border-border-hover cursor-pointer"
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M19 9l-7 7-7-7"></path>
-      </svg>
-    </button>
+        <span data-i18n="nav.contact">Contactame</span>
+        <svg
+          id="contacto-arrow"
+          class="w-4 h-4 transition-transform duration-300"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
 
-    <div
-      id="contacto-menu"
-      class="absolute right-0 top-full mt-2 w-max min-w-48 pr-4 bg-slate-800 border border-slate-700 rounded-xl shadow-2xl opacity-0 invisible transition-all duration-300 transform origin-top -translate-y-2 z-50"
-    >
-      <div class="p-2 flex flex-col gap-1">
-        <a
-          href="https://www.linkedin.com/in/ariel-valverde-paine"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-          class="flex items-center gap-3 px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700 rounded-lg transition-colors"
-        >
-          <LinkedInIcon class="w-5 h-5 text-blue-500" />
-          Ariel Valverde
-        </a>
-        <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=arielvalverde.pa@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Correo Electrónico"
-          class="flex items-center gap-3 px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700 rounded-lg transition-colors"
-        >
-          <MailIcon class="w-5 h-5 text-red-400" />
-          arielvalverde.pa@gmail.com
-        </a>
+      <div
+        id="contacto-menu"
+        class="absolute right-0 top-full mt-2 w-max min-w-48 pr-4 bg-bg-card border border-border rounded-xl shadow-2xl opacity-0 invisible transition-all duration-300 transform origin-top -translate-y-2 z-50"
+      >
+        <div class="p-2 flex flex-col gap-1">
+          <a
+            href="https://www.linkedin.com/in/ariel-valverde-paine"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            class="flex items-center gap-3 px-3 py-2 text-sm text-text-secondary hover:text-text-primary hover:bg-bg-card-hover rounded-lg transition-colors"
+          >
+            <LinkedInIcon class="w-5 h-5 text-[#0A66C2]" />
+            Ariel Valverde
+          </a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=arielvalverde.pa@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Correo Electrónico"
+            class="flex items-center gap-3 px-3 py-2 text-sm text-text-secondary hover:text-text-primary hover:bg-bg-card-hover rounded-lg transition-colors"
+          >
+            <MailIcon class="w-5 h-5 text-red-500" />
+            arielvalverde.pa@gmail.com
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
-  <button
-    class="md:hidden text-slate-300 hover:text-white"
-    aria-label="Abrir menú"
-  >
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M4 6h16M4 12h16M4 18h16"></path>
-    </svg>
-  </button>
+  <div class="md:hidden flex items-center gap-3">
+    <LanguageToggle />
+    <ThemeToggle />
+    <button
+      class="text-text-secondary hover:text-text-primary transition-colors"
+      aria-label="Abrir menú"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
 </header>
 
 <script>

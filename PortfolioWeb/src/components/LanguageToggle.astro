@@ -1,0 +1,51 @@
+---
+---
+<button
+  class="lang-toggle flex items-center gap-1 px-3 py-1.5 rounded-lg border border-border hover:bg-bg-card-hover transition-colors text-sm font-medium cursor-pointer"
+  aria-label="Toggle language"
+>
+  <span class="lang-label text-text-secondary">EN</span>
+</button>
+
+<script>
+  import { translations } from '../i18n/translations.js';
+
+  function setupLangToggles() {
+    const langBtns = document.querySelectorAll('.lang-toggle');
+    const langLabels = document.querySelectorAll('.lang-label');
+
+    function setLanguage(lang) {
+      localStorage.setItem('lang', lang);
+      // Update all button labels to show the OTHER language
+      langLabels.forEach(label => {
+        label.textContent = lang === 'es' ? 'EN' : 'ES';
+      });
+      // Update html lang attribute
+      document.documentElement.lang = lang;
+
+      // Get the translation object for this language
+      const t = translations[lang];
+
+      // Update all elements with data-i18n attribute
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const value = key.split('.').reduce((obj, k) => obj?.[k], t);
+        if (value) el.textContent = value;
+      });
+    }
+
+    // Initialize
+    const savedLang = localStorage.getItem('lang') || 'es';
+    setLanguage(savedLang);
+
+    langBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const current = localStorage.getItem('lang') || 'es';
+        setLanguage(current === 'es' ? 'en' : 'es');
+      });
+    });
+  }
+
+  // Run on load
+  setupLangToggles();
+</script>
