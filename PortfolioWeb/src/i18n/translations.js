@@ -41,6 +41,13 @@ export const translations = {
         tech: 'Tecnologías utilizadas:',
         linkGithub: 'Ver código en GitHub',
         linkLive: 'Ver App'
+      },
+      encintadosGabriela: {
+        title: 'Encintados Gabriela Studio',
+        description: 'Plataforma web de catálogo y cotización para estudio de regalos y recuerdos personalizados hechos a mano. Incluye catálogo interactivo, detalles de productos y cotizador directo a WhatsApp.',
+        tech: 'Tecnologías utilizadas:',
+        linkGithub: 'Ver código en GitHub',
+        linkLive: 'Ver App'
       }
     },
     about: {
@@ -117,6 +124,13 @@ export const translations = {
       finance: {
         title: 'Personal Finance - PWA',
         description: 'Personal financial management app with authentication, monthly summary dashboard, transaction management, and category system. Installable PWA for iOS/Android.',
+        tech: 'Technologies used:',
+        linkGithub: 'View code on GitHub',
+        linkLive: 'View Live App'
+      },
+      encintadosGabriela: {
+        title: 'Encintados Gabriela Studio',
+        description: 'Showcase and quote requesting web platform for a handmade personalized gifts studio. Features interactive catalog, product details, and direct WhatsApp quote calculator.',
         tech: 'Technologies used:',
         linkGithub: 'View code on GitHub',
         linkLive: 'View Live App'

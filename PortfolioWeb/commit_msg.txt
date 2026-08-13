@@ -1,7 +1,6 @@
-feat(portfolio): integrar PWA de finanzas, internacionalización y modo oscuro/claro
+feat(portfolio): añadir proyecto Encintados Gabriela Studio
 
-- Añadida la tarjeta `FinanceAppCard` para mostrar el nuevo proyecto de Finanzas Personales PWA con enlaces a GitHub y a la app en vivo.
-- Refactorizado el sistema de colores a variables CSS (`global.css`) utilizando la directiva `@theme` de Tailwind v4 para una paleta minimalista y neutral.
-- Implementado el Modo Oscuro/Claro con el componente `ThemeToggle` y persistencia de estado.
-- Implementado un sistema de internacionalización (Español/Inglés) con el componente `LanguageToggle` y un archivo central `translations.js` para todo el contenido.
-- Actualizados todos los componentes `.astro` existentes para soportar el cambio dinámico de colores y los atributos `data-i18n` para la traducción.
+- Añadida la tarjeta `EncintadosGabrielaCard` con enlaces a GitHub y Vercel en vivo.
+- Agregados los íconos del stack (React, Vite, Tailwind CSS, TypeScript).
+- Añadidas las traducciones en español e inglés en `translations.js`.
+- Actualizada la sección de proyectos destacados en `Projects.astro`.

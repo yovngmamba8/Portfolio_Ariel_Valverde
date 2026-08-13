@@ -1,0 +1,81 @@
+---
+import GitHubIcon from "../icons/GitHubIcon.astro";
+---
+
+<div
+  class="flex flex-col bg-bg-card border border-border rounded-xl p-6 hover:bg-bg-card-hover hover:border-border-hover transition-all group"
+>
+  <h3
+    class="text-xl font-semibold text-text-primary mb-2"
+    data-i18n="projects.encintadosGabriela.title"
+  >
+    Encintados Gabriela Studio
+  </h3>
+
+  <p
+    class="text-text-secondary mb-4 flex-1 text-sm leading-relaxed"
+    data-i18n="projects.encintadosGabriela.description"
+  >
+    Plataforma web de catálogo y cotización para estudio de regalos y recuerdos personalizados hechos a mano. Incluye catálogo interactivo, detalles de productos y cotizador directo a WhatsApp.
+  </p>
+
+  <div class="flex items-center gap-4 mb-6">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+      alt="React"
+      title="React"
+      class="w-8 h-8 hover:scale-110 transition-transform duration-300"
+    />
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+      alt="Vite"
+      title="Vite"
+      class="w-8 h-8 hover:scale-110 transition-transform duration-300"
+    />
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+      alt="Tailwind CSS"
+      title="Tailwind CSS"
+      class="w-8 h-8 hover:scale-110 transition-transform duration-300"
+    />
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+      alt="TypeScript"
+      title="TypeScript"
+      class="w-8 h-8 hover:scale-110 transition-transform duration-300 rounded-sm"
+    />
+  </div>
+
+  <div class="flex items-center gap-4 mt-auto">
+    <a
+      href="https://github.com/yovngmamba8/Encintados-Gabriela-Studio"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center gap-2 text-accent hover:text-accent-hover font-medium transition-colors text-sm"
+    >
+      <GitHubIcon class="w-5 h-5" />
+      <span data-i18n="projects.encintadosGabriela.linkGithub">Ver código en GitHub</span>
+    </a>
+    <a
+      href="https://encintados-gabriela-studio.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center gap-2 text-accent hover:text-accent-hover font-medium transition-colors text-sm"
+    >
+      <svg
+        class="w-4 h-4"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+        ></path>
+      </svg>
+      <span data-i18n="projects.encintadosGabriela.linkLive">Ver App</span>
+    </a>
+  </div>
+</div>
