@@ -1,6 +1,0 @@
-feat(portfolio): añadir proyecto Encintados Gabriela Studio
-
-- Añadida la tarjeta `EncintadosGabrielaCard` con enlaces a GitHub y Vercel en vivo.
-- Agregados los íconos del stack (React, Vite, Tailwind CSS, TypeScript).
-- Añadidas las traducciones en español e inglés en `translations.js`.
-- Actualizada la sección de proyectos destacados en `Projects.astro`.

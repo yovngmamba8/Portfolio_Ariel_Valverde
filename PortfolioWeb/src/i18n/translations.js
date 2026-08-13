@@ -47,7 +47,7 @@ export const translations = {
         description: 'Plataforma web de catálogo y cotización para estudio de regalos y recuerdos personalizados hechos a mano. Incluye catálogo interactivo, detalles de productos y cotizador directo a WhatsApp.',
         tech: 'Tecnologías utilizadas:',
         linkGithub: 'Ver código en GitHub',
-        linkLive: 'Ver App'
+        linkLive: 'Ver Web'
       }
     },
     about: {
@@ -133,7 +133,7 @@ export const translations = {
         description: 'Showcase and quote requesting web platform for a handmade personalized gifts studio. Features interactive catalog, product details, and direct WhatsApp quote calculator.',
         tech: 'Technologies used:',
         linkGithub: 'View code on GitHub',
-        linkLive: 'View Live App'
+        linkLive: 'View Website'
       }
     },
     about: {
