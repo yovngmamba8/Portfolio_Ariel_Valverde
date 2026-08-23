@@ -11,7 +11,7 @@ export const translations = {
       titleLine1: 'Desarrollador Web',
       titleLine2: 'Full Stack',
       titleAccent: 'y Calidad de Software',
-      description: 'Estudiante de Ingeniería en Informática en',
+      description: 'Desarrollador Web Full Stack orientado al Front End,',
       descriptionEnd: 'con experiencia en desarrollo web y calidad de software. Apasionado por crear soluciones innovadoras y eficientes. Siempre buscando aprender nuevas tecnologías y mejorar mis habilidades. ¡Bienvenido a mi portfolio!',
       downloadCV: 'Descargar CV'
     },
@@ -97,7 +97,7 @@ export const translations = {
       titleLine1: 'Full Stack',
       titleLine2: 'Web Developer',
       titleAccent: '& Software Quality',
-      description: 'Computer Engineering student at',
+      description: 'Full Stack Web Developer oriented to Front End,',
       descriptionEnd: 'with experience in web development and software quality. Passionate about creating innovative and efficient solutions. Always looking to learn new technologies and improve my skills. Welcome to my portfolio!',
       downloadCV: 'Download CV'
     },
