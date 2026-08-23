@@ -12,7 +12,7 @@ export const translations = {
       titleLine2: 'Full Stack',
       titleAccent: 'y Calidad de Software',
       description: 'Desarrollador Web Full Stack orientado al Front End,',
-      descriptionEnd: 'con experiencia en desarrollo web y calidad de software. Apasionado por crear soluciones innovadoras y eficientes. Siempre buscando aprender nuevas tecnologías y mejorar mis habilidades. ¡Bienvenido a mi portfolio!',
+      descriptionEnd: 'y QA, apasionado por crear soluciones innovadoras y eficientes. Siempre buscando aprender nuevas tecnologías y mejorar mis habilidades. ¡Bienvenido a mi portfolio!',
       downloadCV: 'Descargar CV'
     },
     projects: {
@@ -55,12 +55,12 @@ export const translations = {
       p1: 'Actualmente soy estudiante de último año de Ingeniería en Informática en',
       p1End: ', con una visión integral del desarrollo: creo firmemente que el buen código no solo debe ser funcional, sino también seguro, escalable y capaz de generar un impacto real en los usuarios.',
       p2Start: 'Mi perfil técnico se enfoca fuertemente en la ',
-      p2Highlight: 'calidad de software y la seguridad de redes',
-      p2End: ', respaldado por mi formación base como Técnico en Telecomunicaciones. Disfruto el reto de resolver problemas complejos, ya sea estructurando la arquitectura de redes, creando asistentes virtuales o ideando soluciones con chips NFC.',
-      p3Start: 'Más allá de la terminal, tengo un espíritu emprendedor que actualmente aplico en la creación y desarrollo de mi propia marca de ropa, ',
-      p3Highlight: 'Dreams Project',
-      p3End: '. Construir un proyecto desde cero me ha dado una perspectiva invaluable sobre cómo el diseño, la experiencia de usuario y el modelo de negocio deben alinearse perfectamente con el desarrollo web.',
-      p4: 'No me conformo con solo escribir líneas de código; busco entender el producto en su totalidad para asegurar que la solución tecnológica final sea tan robusta por detrás como intuitiva por delante.'
+      p2Highlight: 'calidad de software y el Desarrollo Web',
+      p2End: ', a su vez cuento con competencias en el area de Redes, debido a mi formación base como Técnico en Telecomunicaciones. Disfruto el reto de resolver problemas complejos, ya sea generando ideas para la creación de proyectos, o ayudando a clientes a aumentar sus ventas a traves de soluciones digitales.',
+      p3Start: 'Más allá de la terminal, tengo un espíritu de un guerrero que genera constancia y determinación, cualidades que e podido obtener gracias al deporte, esto tambien respalda mi buen trabajo en equipo gracias al ',
+      p3Highlight: 'Basquetbol',
+      p3End: '. Busco siempre superarme y dar lo mejor de mí, para generar un impacto positivo dentro del ciclo de vida de un proyecto y lograr el exito.',
+      p4Start: 'No me conformo con solo escribir líneas de código; busco entender el producto en su totalidad, desde la visión del usuario hasta la visión de negocio, para asegurar que la solución tecnológica final sea tan robusta por detrás como intuitiva por delante.'
     },
     experience: {
       title: 'Trayectoria',
