@@ -1,5 +1,0 @@
-{
-  "buildCommand": "cd PortfolioWeb && npm install && npm run build",
-  "outputDirectory": "PortfolioWeb/dist",
-  "framework": "astro"
-}
